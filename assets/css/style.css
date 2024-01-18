@@ -1,0 +1,79 @@
+body {  
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .container {
+    position: center;
+    width: 500px;
+    height: 500px;
+  }
+  img {
+    vertical-align: middle;
+  }
+  
+  .slide {
+    display: none;
+  }
+  
+  .prev,
+  .next {
+    cursor: pointer;
+    position: absolute;
+    top: 40%;
+    width: auto;
+    padding: 16px;
+    margin-top: -50px;
+    color: rgb(228, 179, 179);
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    -webkit-user-select: none;
+  }
+  
+  .caption-Cont {
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.87);
+    padding: 2px 16px;
+    color: rgb(114, 129, 173);
+  }
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  .prev:hover,
+  .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+  
+  /* position the numbers*/
+  .position {
+      position: absolute;
+      font-size: 15px;
+      padding: 10px;
+      color: #f2f2f2ec;
+      top: 0;
+  }
+  .image {
+      opacity: 0.6; 
+  }
+  
+  .active,
+  .image:hover {
+    opacity: 1;
+    cursor: pointer;
+  }
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  .column {
+    float: left;
+    width: 16.66%;
+  }
